@@ -46,7 +46,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             // put your multiplatform dependencies here
-            implementation(project(":model"))
+            api(project(":model"))
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.ktor.client.core)

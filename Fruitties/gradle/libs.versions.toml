@@ -7,6 +7,7 @@ androidx-viewmodelCompose = "2.7.0"
 atomicfu = "0.23.1"
 compose = "1.6.5"
 compose-compiler = "1.5.11"
+compose-kmp = "1.6.10-beta02"
 compose-material3 = "1.2.1"
 compose-plugin = "1.6.0"
 dataStoreVersion = "1.1.1"
@@ -33,7 +34,9 @@ androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = 
 androidx-room-paging = { group = "androidx.room", name = "room-paging", version.ref = "androidx-room" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidx-room" }
 androidx-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-viewmodelCompose" }
+compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "compose-compiler" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-kmp-runtime = {module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-kmp"}
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
@@ -57,6 +60,7 @@ sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sql
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeKmp = { id = "org.jetbrains.compose", version.ref = "compose-kmp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }

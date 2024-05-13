@@ -19,6 +19,7 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
     alias(libs.plugins.skie)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.composeKmp)
 }
 
 kotlin {
@@ -55,6 +56,7 @@ kotlin {
             implementation(libs.androidx.room.runtime)
             implementation(libs.sqlite.bundled)
             implementation(libs.kotlinx.atomicfu)
+            implementation(libs.compose.kmp.runtime)
             api(libs.androidx.datastore.preferences.core)
             api(libs.androidx.datastore.core.okio)
             implementation(libs.okio)
@@ -65,6 +67,7 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
             implementation(libs.androidx.room.paging)
+            implementation(libs.compose.compiler)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
